@@ -215,6 +215,8 @@ section h2 {
     .categorias li ul li {
         font-size: 0.8rem;
     }
+
+    
       
     /* Estilos para las novedades */
   
@@ -270,9 +272,38 @@ section h2 {
     }
 
     @media (max-width: 768px) {
+
+      .novedades ul {
+        margin: 0 auto;
+    
+        }
         .novedades li {
             margin: 0 0px 20px 0;
             flex: 0 0 calc(100% - 20px);
+        }
+
+        .categorias li {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding: 0.5rem 0.5rem;
+          flex: 0 0 calc(100% - 20px);
+      }
+  
+      .categorias ul {
+        margin: 0 auto;
+    
+        }
+  
+        section{
+          padding: 3rem 1rem;
+          margin: 0px auto;
+          width: 100%;
+        }
+        
+        footer{
+            padding: 2rem 1rem;
+            background-color: var(--primary);
         }
         
     }
